@@ -42,7 +42,16 @@ func main() {
 	scanner.Scan()
 	bulan2,_ := strconv.Atoi(scanner.Text())
 
+	// bug saat bulan 12 dicetak
 	for i := bulan1 -1; i < bulan2; i++{
 		fmt.Printf("Bulan %s : %d tusuk\n", month[i], sales[month[i]])
 	}
+	
+	// for i := bulan1 -1; i < bulan2; i++{
+	// 	for key, val := range sales{
+	// 		if month[i] == key{
+	// 			fmt.Printf("Bulan %s : %d tusuk\n", key, val)
+	// 		}
+	// 	}
+	// }
 }
