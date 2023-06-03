@@ -44,7 +44,10 @@ func potongSekat(sekat []int) {
 }
 
 func printSekat(sekat []int) {
-	for _, value := range sekat {
-		fmt.Println(value)
+	for _, val := range sekat {
+		if val < 0 {
+			val = 0
+		}
+		fmt.Println(val)
 	}
 }
